@@ -1,0 +1,11 @@
+defmodule <%= module_prefix %>.Repo.Migrations.CreateSiphonPullJob do
+  use Ecto.Migration
+
+  def change do
+    create table(:siphon_pull_job) do
+      add :venue, :text, null: false
+
+      timestamps()
+    end
+  end
+end
